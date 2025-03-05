@@ -10,7 +10,10 @@
 
 <img src="assets/github-repo-logo.gif" alt="daily.dev animated logo" height="80">
 
+
 </div>
+
+![daily-dev](https://github.com/user-attachments/assets/29b40056-28cb-4bff-bb46-8baee0119777)
 
 <br>
 
