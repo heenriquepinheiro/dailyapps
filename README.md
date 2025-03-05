@@ -4,99 +4,33 @@
 </div>
 <br>
 
-<p align="center">
-  <a href="https://circleci.com/gh/dailydotdev/apps">
-    <img src="https://img.shields.io/circleci/build/github/dailydotdev/apps/**master**.svg" alt="Build Status">
-  </a>
-  <a href="https://github.com/dailydotdev/apps/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/dailydotdev/apps.svg" alt="License">
-  </a>
-  <a href="https://stackshare.io/daily/daily">
-    <img src="http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat" alt="StackShare">
-  </a>
-</p>
+<a name="readme-top"></a>
 
-<p align="center">
-  <a href="https://gitpod.io/#https://github.com/dailydotdev/apps/">
-    <img src="https://gitpod.io/button/open-in-gitpod.svg" alt="Open in Gitpod">
-  </a>
-</p>
+<div align="center">
 
-This monorepo contains daily.dev's application suite. The repo includes the web app and the extension, along with shared components for the two.
-By using a monorepo approach, we can easily share code and maintain consistency across the different parts of the application suite.
-The decision was made to allow faster iterations and to keep features parity in both platforms.
+<img src="assets/github-repo-logo.gif" alt="daily.dev animated logo" height="80">
 
-## Technologies
+</div>
 
-- Node v22.11 (a `.nvmrc` is presented for [nvm](https://github.com/nvm-sh/nvm) users).
-- [pnpm](https://pnpm.io/workspaces) for managing the monorepo and dependencies.
+<br>
 
-## Projects
 
-### [packages](https://github.com/dailydotdev/apps/tree/main/packages)
+## What is Daily?
+Daily.dev is a content aggregation platform designed for developers. It curates high-quality technical articles, news, and updates from various sources, helping developers stay informed about industry trends. The platform provides a personalized feed of programming-related content, enabling users to discuss topics with others. Daily.dev works offline and is available as both a browser extension and a Progressive Web App (PWA).
+<br>
 
-contains a collection of smaller projects or libraries that are used across the daily.dev application suite. Here's a brief overview of each package mentioned:
+## How alive is the project?
+The project is currently active, with the repository receiving frequent updates. Recent commits indicate ongoing development and maintenance efforts. The presence of multiple contributors and a structured monorepo approach suggests that the team is actively working on enhancements, bug fixes, and new features. The project on GitHub has garnered 19.2k stars and has 4,218 closed issues. There are three repositories: the first contains all the documentation, the second holds the code for the web application and extension, and the third is dedicated to the project API. Our focus will be on the second repository, which contains currently 44 open issues.
 
-- ### [eslint-config](https://github.com/dailydotdev/apps/tree/main/packages/eslint-config)
+<br>
 
-  Shared ESLint settings for maintaining consistent code quality across the project.
+## How important is it?
+Daily.dev is significant for developers who want a centralized source for tech news and articles. It has a large user base and is integrated into browser extensions, making it an essential tool for many developers. Its importance is further highlighted by its open-source model, encouraging community contributions and transparency.
 
-- ### [eslint-rules](https://github.com/dailydotdev/apps/tree/main/packages/eslint-rules)
+## What is it good for?
+Daily.dev is great for keeping developers informed about the latest trends, best practices, and innovations in the tech industry. It serves as an alternative to manually following multiple blogs, newsletters, or social media sources, making learning and staying updated more efficient.
 
-  A custom ESLint plugin that defines a set of rules for the project, including a rule to enforce consistent color usage.
+<br>
 
-- ### [extension](https://github.com/dailydotdev/apps/tree/main/packages/extension)
-
-  The browser extension project. Includes webpack configuration for browser extensions and the dedicated components just for the extension.
-
-- ### [prettier-config](https://github.com/dailydotdev/apps/tree/main/packages/prettier-config)
-
-  Shared Prettier settings for all the projects in this repo.
-
-- ### [shared](https://github.com/dailydotdev/apps/tree/main/packages/shared)
-
-  The main project contains most of the components used in the applications. Every component that needs to be used on both platforms should be placed in this project. This includes the design system components, custom hooks, and many more.
-
-- ### [storybook](https://github.com/dailydotdev/apps/tree/main/packages/storybook)
-
-  The Storybook configuration for the project, used to develop and showcase UI components in isolation.
-
-- ### [webapp](https://github.com/dailydotdev/apps/tree/master/packages/webapp)
-
-  The web app project. This is a Next.js project and has more pages than the extension, such as a registration page, post page, profile page, etc. For more information [click here](https://github.com/dailydotdev/apps/tree/master/packages/webapp).
-
-## Local Environment
-
-  To spin up a local environment, we suggest using GitPod. We have a GitPod button above, everything is already configured and should work out of the box. Click on it and let's roll!
-
-  **Note:** Checkout getting started with GitPod using their [official docs](https://www.gitpod.io/docs/introduction/getting-started). If you're new to gitPod, don't worry, it's a simple and powerful tool that will help you get started with this project in no time.
-
-## Want to Help?
-
-So you want to contribute to daily.dev app suite and make an impact, we are glad to hear it. :heart_eyes:
-
-Before you proceed we have a few guidelines for contribution that will make everything much easier.
-
-We would appreciate if you dedicate the time and read them carefully:
-[CONTRIBUTING.md](https://github.com/dailydotdev/.github/blob/master/CONTRIBUTING.md)
-
-## Bootstrap Project
-
-After cloning the project, please make sure to run the following commands to bootstrap the project:
-
-```bash
-npm i -g pnpm@9.14.4
-pnpm install
-```
-
-### Run Extension Locally
-
-Example for Chrome:
-
-- Run `pnpm --filter extension dev:chrome` in the root directory
-- Open Chrome and go to `chrome://extensions/`
-- Enable `Developer mode` in the top right corner
-- Click on `Load unpacked` and select the `packages/extension/dist/chrome` folder
-- The extension should be loaded and you should be able to see it in the extensions list
-- Enable the extension, don't forget to disable it when you are done
-- Disable the production extension if you have it installed as it might cause conflicts
+## What are the technologies involved?
+The web application is built using Next.js, a React-based framework optimized for performance and scalability. The project uses pnpm for package management and follows a monorepo structure, which allows for better organization and code reuse across different applications like the browser extension. Other technologies involved include TypeScript and Node.js.
